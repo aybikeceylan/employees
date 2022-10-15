@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ click }) => {
     return (
         <div className="button">
-            <button>Prev</button>
-            <button>Next</button>
+            <button onClick={click}>Prew</button>
+            <button onClick={click}>Next</button>
         </div>
     )
 }

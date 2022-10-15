@@ -1,18 +1,25 @@
 import React from 'react'
+import data from "../helper/data"
 
-const Card = () => {
+const Card = ({ count }) => {
     return (
-        <div className="card">
-            <div className="image">
-                <img src="" alt="" />
-            </div>
-            <div className="title">
-                <p className="name"></p>
-                <p className="mail"></p>
-                <p className="age"></p>
-            </div>
-        </div>
+        (data.slice(count, (count + 5)).map((item) => {
+            const { name, image, email, age } = item
+            return (
+                <div className="card">
+                    <div className="image">
+                        <img src={image} alt="" />
+                    </div>
+                    <div className="title">
+                        <p className="name">{name}</p>
+                        <p className="mail">{email}</p>
+                        <p className="age">{age}</p>
+                    </div>
+                </div>)
+        }))
+
     )
+
 }
 
 export default Card
