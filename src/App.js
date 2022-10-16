@@ -23,7 +23,7 @@ function App() {
         setCount(16)
       }
     }
-    console.log(count);
+    // console.log(count);
   }
 
   return (

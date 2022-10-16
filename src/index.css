@@ -61,3 +61,11 @@ button {
   height: 50px;
   margin: 0.5rem;
 }
+@media screen and (max-width: 500px) {
+  .chart {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 80%;
+    height: 85vh;
+  }
+}
