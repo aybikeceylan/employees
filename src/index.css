@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100%;
+}
 .App {
   display: flex;
   justify-content: center;
@@ -15,13 +18,13 @@
     rgba(255, 188, 0, 1) 100%
   );
   width: 100vw;
-  height: 100vh;
+  height: 850px;
 }
 .chart {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   width: 35%;
-  height: 85vh;
+  height: 750px;
 }
 .head {
   text-align: center;
@@ -62,6 +65,20 @@ button {
   margin: 0.5rem;
 }
 @media screen and (max-width: 500px) {
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      126deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(193, 99, 18, 1) 38%,
+      rgba(255, 188, 0, 1) 100%
+    );
+    width: 100vw;
+    height: 900px;
+  }
   .chart {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
