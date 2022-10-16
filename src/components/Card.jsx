@@ -3,10 +3,10 @@ import data from "../helper/data"
 
 const Card = ({ count }) => {
     return (
-        (data.slice(count, (count + 5)).map((item) => {
+        (data.slice((count - 1), (count + 4)).map((item, index) => {
             const { name, image, email, age } = item
             return (
-                <div className="card">
+                <div className="card" key={index} >
                     <div className="image">
                         <img src={image} alt="" />
                     </div>

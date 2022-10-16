@@ -7,23 +7,23 @@ function App() {
   const [count, setCount] = useState(1)
   const handleClick = (e) => {
     if (e.target.value === "Next") {
-      if (count >= 0 && count < 11) {
+      if (count >= 0 && count <= 11) {
         setCount(count + 5)
       }
       else if (count >= 15) {
-        setCount(0)
+        setCount(1)
       }
     }
 
     if (e.target.value === "Prew") {
-      if (count >= 0) {
+      if (count > 1) {
         setCount(count - 5)
       }
-      if (count <= 0) {
-        setCount(15)
+      if (count <= 1) {
+        setCount(16)
       }
     }
-
+    console.log(count);
   }
 
   return (
